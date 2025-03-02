@@ -14,10 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="p-10  not-only-of-type:p-6  text-white min-h-screen bg-gradient-to-b from-black to-orange-900">
+          {children}
+          <div className="p-6"></div>
+        </main>
         <Footer />
       </body>
     </html>
